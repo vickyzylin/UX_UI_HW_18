@@ -133,3 +133,34 @@ button:hover {
     background-color: #C36E49;
     color: white;
 }
+
+@media (max-width: 600px) {
+    .Projects {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "Project1-Image"
+        "Project1"
+        "Project2-Image"
+        "Project2"
+        "Project3-Image"
+        "Project3";
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+      .workGrid > div {
+        padding: 20px;
+      }
+      .project1-image,
+      .project1,
+      .project2-image,
+      .project2,
+      .project3-image,
+      .project3 {
+        grid-template-areas: none;
+      }
+      .workGrid img {
+        width: 500px;
+      }
+    }

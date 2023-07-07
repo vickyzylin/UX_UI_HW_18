@@ -156,3 +156,27 @@ h3 {
     font-size: 85px;
     font-weight: bold;
 }
+@media (max-width: 600px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+    .flexChild {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .mySkills {
+      grid-template-areas:
+        "UX Design"
+        "Visual Design"
+        "Programming";
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 1fr;
+    }
+    .split {
+        width: 100%;
+        float: none;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
